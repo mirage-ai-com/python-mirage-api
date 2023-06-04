@@ -1,2 +1,3 @@
 # python-mirage-api
-🐍 Mirage API Python Wrapper
+
+The Mirage API Python wrapper. Access AI inference services.
