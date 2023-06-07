@@ -14,6 +14,7 @@ setup(
     license='MIT - http://opensource.org/licenses/mit-license.php',
     description='Mirage API Python wrapper.',
     long_description=open('README.md').read(),
+    long_description_content_type="text/markdown",
     classifiers=[
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
