@@ -17,12 +17,12 @@ jobs:
         id: install_python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.10"
+          python-version: "3.12"
 
       - name: Install dependencies
         id: install_dependencies
         run: |
-          python3 -m pip install --user --upgrade setuptools wheel twine
+          python3 -m pip install --user --upgrade pip setuptools wheel twine
 
       - name: Build
         id: build
