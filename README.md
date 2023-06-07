@@ -68,7 +68,7 @@ This library implements all methods the Mirage API provides. See the [API docs](
 
 * **Request:**
 
-```javascript
+```python
 client.task.transcribe_speech({
   "locale": {
     "to": "en"
@@ -108,7 +108,7 @@ client.task.transcribe_speech({
 
 * **Request:**
 
-```javascript
+```python
 client.task.answer_question({
   "question": "Should I pay more for that?",
 
@@ -186,7 +186,7 @@ client.task.answer_question({
 
 * **Request:**
 
-```javascript
+```python
 client.task.summarize_conversation({
   "transcript": [
     {
@@ -221,7 +221,7 @@ client.task.summarize_conversation({
 
 * **Request:**
 
-```javascript
+```python
 client.task.categorize_conversation({
   "transcript": [
     {
@@ -256,7 +256,7 @@ client.task.categorize_conversation({
 
 * **Request:**
 
-```javascript
+```python
 client.task.translate_text({
   "locale": {
     "from": "fr",
@@ -289,7 +289,7 @@ client.task.translate_text({
 
 * **Request:**
 
-```javascript
+```python
 client.data.context_ingest({
   "items": [
     {
