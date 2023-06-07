@@ -1,6 +1,6 @@
 # python-mirage-api
 
-[![Test and Build](https://github.com/mirage-ai-com/python-mirage-api/workflows/Test%20and%20Build/badge.svg?branch=master)](https://github.com/mirage-ai-com/python-mirage-api/actions?query=workflow%3A%22Test+and+Build%22) [![Build and Release](https://github.com/mirage-ai-com/python-mirage-api/workflows/Build%20and%20Release/badge.svg)](https://github.com/mirage-ai-com/python-mirage-api/actions?query=workflow%3A%22Build+and+Release%22) [![PyPI](https://img.shields.io/pypi/v/mirage-api.svg)](https://pypi.org/project/mirage-api/) [![Downloads](https://img.shields.io/pypi/dm/mirage-api.svg)](https://pypi.org/project/mirage-api/)
+[![Build and Release](https://github.com/mirage-ai-com/python-mirage-api/workflows/Build%20and%20Release/badge.svg)](https://github.com/mirage-ai-com/python-mirage-api/actions?query=workflow%3A%22Build+and+Release%22) [![PyPI](https://img.shields.io/pypi/v/mirage-api.svg)](https://pypi.org/project/mirage-api/) [![Downloads](https://img.shields.io/pypi/dm/mirage-api.svg)](https://pypi.org/project/mirage-api/)
 
 The Mirage API Python wrapper. Access AI inference services.
 
