@@ -179,6 +179,39 @@ client.task.answer_question({
 }
 ```
 
+#### ➡️ Summarize Paragraphs
+
+* **Method:** `client.task.summarize_paragraphs(data)`
+* **Reference:** [Summarize Paragraphs](https://docs.mirage-ai.com/references/api/v1/#summarize-paragraphs)
+
+* **Request:**
+
+```javascript
+client.task.summarize_paragraphs({
+  "transcript": [
+    {
+      "text": "GPT-4 is getting worse over time, not better."
+    },
+
+    {
+      "text": "Many people have reported noticing a significant degradation in the quality of the model responses, but so far, it was all anecdotal."
+    }
+  ]
+});
+```
+
+* **Response:**
+
+```json
+{
+  "reason": "processed",
+
+  "data": {
+    "summary": "GPT-4 is getting worse over time, not better. We have a new version of GPT-4 that is not improving, but it is regressing."
+  }
+}
+```
+
 #### ➡️ Summarize Conversation
 
 * **Method:** `client.task.summarize_conversation(data)`

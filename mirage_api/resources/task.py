@@ -15,6 +15,9 @@ class TaskResource(object):
   def answer_question(self, data):
     return self.parent.post("/task/answer/question", data)
 
+  def summarize_paragraphs(self, data):
+    return self.parent.post("/task/summarize/paragraphs", data)
+
   def summarize_conversation(self, data):
     return self.parent.post("/task/summarize/conversation", data)
 
