@@ -326,6 +326,7 @@ client.task.translate_text({
 client.data.context_ingest({
   "items": [
     {
+      "operation": "index",
       "primary_id": "pri_cf44dd72-4ba9-4754-8fb3-83c4261243c4",
       "secondary_id": "sec_6693a4a2-e33f-4cce-ba90-b7b5b0922c46",
       "tertiary_id": "ter_de2bd6e7-74e1-440d-9a23-01964cd4b7da",
