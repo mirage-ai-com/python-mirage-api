@@ -186,7 +186,7 @@ client.task.answer_question({
 
 * **Request:**
 
-```javascript
+```python
 client.task.summarize_paragraphs({
   "transcript": [
     {
@@ -278,6 +278,58 @@ client.task.categorize_conversation({
 
   "data": {
     "category": "Chatbot Configuration Issue"
+  }
+}
+```
+
+#### ➡️ Rank Question
+
+* **Method:** `client.task.rank_question(data)`
+* **Reference:** [Rank Question](https://docs.mirage-ai.com/references/api/v1/#rank-question)
+
+* **Request:**
+
+```python
+client.task.rank_question({
+  "question": "Hi! I am having issues setting up DNS records for my Crisp helpdesk. Can you help?",
+  "source": "helpdesk",
+
+  "context": {
+    "team": {
+      "id": "cf4ccdb5-df44-4668-a9e7-3ab31bebf89b",
+      "name": "Crisp"
+    }
+  }
+});
+```
+
+* **Response:**
+
+```json
+{
+  "reason": "processed",
+
+  "data": {
+    "results": [
+      {
+        "id": "15fd3f24-56c8-435e-af8e-c47d4cd6115c",
+        "score": 9,
+        "grouped_text": "Setup your Helpdesk domain name\ntutorials for most providers",
+
+        "items": [
+          {
+            "source": "helpdesk",
+            "primary_id": "51a32e4c-1cb5-47c9-bcc0-3e06f0dce90a",
+            "secondary_id": "15fd3f24-56c8-435e-af8e-c47d4cd6115c",
+            "text": "Setup your Helpdesk domain name\ntutorials for most providers",
+
+            "metadata": {
+              "title": "Setup your Helpdesk domain name"
+            }
+          }
+        ]
+      }
+    ]
   }
 }
 ```
