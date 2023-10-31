@@ -38,8 +38,8 @@ data = client.task.transcribe_speech({
   },
 
   "media": {
-    "type": "audio/mp3",
-    "url": "https://storage.crisp.chat/users/upload/session/5acfdb5400c15c00/audio1681224631050_9elgef.mp3"
+    "type": "audio/webm",
+    "url": "https://files.mirage-ai.com/dash/terminal/samples/transcribe-speech/hey-there.weba"
   }
 })
 ```
@@ -75,8 +75,8 @@ client.task.transcribe_speech({
   },
 
   "media": {
-    "type": "audio/mp3",
-    "url": "https://storage.crisp.chat/users/upload/session/5acfdb5400c15c00/audio1681224631050_9elgef.mp3"
+    "type": "audio/webm",
+    "url": "https://files.mirage-ai.com/dash/terminal/samples/transcribe-speech/hey-there.weba"
   }
 });
 ```
@@ -188,7 +188,7 @@ client.task.answer_question({
 
 ```python
 client.task.summarize_paragraphs({
-  "transcript": [
+  "paragraphs": [
     {
       "text": "GPT-4 is getting worse over time, not better."
     },
