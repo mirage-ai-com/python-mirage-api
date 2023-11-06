@@ -47,7 +47,12 @@ class Mirage(object):
   def post(self, resource, data):
     return self.__do_post(resource, data)
 
-  def __do_post(self, resource, data={}, query={}):
+  def __do_post(self, resource, data=None, query=None):
+    # Fallback on default values (as needed)
+    data = data or {}
+    query = query or {}
+
+    # Prepare REST URL
     if bool(query) is True:
       url = "%s?%s" % (self.__prepare_rest_url(resource), parse.urlencode(query))
     else:
