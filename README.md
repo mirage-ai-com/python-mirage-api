@@ -6,7 +6,7 @@ The Mirage API Python wrapper. Access AI inference services.
 
 Copyright 2023 Crisp IM SAS. See LICENSE for copying information.
 
-* **📝 Implements**: [API Reference (V1)](https://docs.mirage-ai.com/references/api/v1/) at revision: 14/05/2023
+* **📝 Implements**: [API Reference (V1)](https://docs.mirage-ai.com/references/api/v1/) at revision: 19/12/2023
 * **😘 Maintainer**: [@valeriansaliou](https://github.com/valeriansaliou)
 
 ## Usage
@@ -97,6 +97,31 @@ client.task.transcribe_speech({
         "text": " I'm just speaking some seconds to see if the translation is correct"
       }
     ]
+  }
+}
+```
+
+#### ➡️ Answer Prompt
+
+* **Method:** `client.task.answer_prompt(data)`
+* **Reference:** [Answer Prompt](https://docs.mirage-ai.com/references/api/v1/#answer-prompt)
+
+* **Request:**
+
+```python
+client.task.answer_prompt({
+  "prompt": "Generate an article about Alpacas"
+});
+```
+
+* **Response:**
+
+```json
+{
+  "reason": "processed",
+
+  "data": {
+    "answer": "The alpaca (Lama pacos) is a species of South American camelid mammal. It is similar to, and often confused with, the llama. However, alpacas are often noticeably smaller than llamas. The two animals are closely related and can successfully crossbreed. Both species are believed to have been domesticated from their wild relatives, the vicuña and guanaco. There are two breeds of alpaca: the Suri alpaca and the Huacaya alpaca."
   }
 }
 ```

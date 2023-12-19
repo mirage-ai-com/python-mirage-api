@@ -12,6 +12,9 @@ class TaskResource(object):
   def transcribe_speech(self, data):
     return self.parent.post("/task/transcribe/speech", data)
 
+  def answer_prompt(self, data):
+    return self.parent.post("/task/answer/prompt", data)
+
   def answer_question(self, data):
     return self.parent.post("/task/answer/question", data)
 
