@@ -64,7 +64,7 @@ class Mirage(object):
     # Generate request headers
     headers = {
       "Content-Type": "application/json",
-      "User-Agent": "python-mirage-api/1.4.0",
+      "User-Agent": "python-mirage-api/1.5.0",
       "Authorization": self.__generate_auth()
     }
 
