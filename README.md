@@ -367,6 +367,34 @@ client.task.translate_text({
 }
 ```
 
+#### ➡️ Fraud Spamicity
+
+* **Method:** `client.task.fraud_spamicity(data)`
+* **Reference:** [Fraud Spamicity](https://docs.mirage-ai.com/references/api/v1/#fraud-spamicity)
+
+* **Request:**
+
+```python
+client.task.fraud_spamicity({
+  "name": "Crisp",
+  "domain": "crisp.chat",
+  "email_domain": "mail.crisp.chat"
+});
+```
+
+* **Response:**
+
+```json
+{
+  "reason": "processed",
+
+  "data": {
+    "fraud": false,
+    "score": 0.13
+  }
+}
+```
+
 ### Data API
 
 #### ➡️ Context Ingest

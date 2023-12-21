@@ -32,3 +32,6 @@ class TaskResource(object):
 
   def translate_text(self, data):
     return self.parent.post("/task/translate/text", data)
+
+  def fraud_spamicity(self, data):
+    return self.parent.post("/task/fraud/spamicity", data)
