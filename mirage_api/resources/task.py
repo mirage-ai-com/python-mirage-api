@@ -35,3 +35,6 @@ class TaskResource(object):
 
   def fraud_spamicity(self, data):
     return self.parent.post("/task/fraud/spamicity", data)
+
+  def spam_classify(self, data):
+    return self.parent.post("/task/spam/classify", data)
