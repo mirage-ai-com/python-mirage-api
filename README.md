@@ -470,8 +470,8 @@ client.task.spam_document({
     "logprob": -0.10,
 
     "scores": {
-      "gibberish": 0.0,
-      "marketing": 0.0,
+      "gibberish": null,
+      "marketing": null,
       "regular": 0.0,
       "spam": 0.82
     }
