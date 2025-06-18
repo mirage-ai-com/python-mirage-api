@@ -6,7 +6,7 @@ The Mirage API Python wrapper. Access AI inference services.
 
 Copyright 2023 Crisp IM SAS. See LICENSE for copying information.
 
-* **📝 Implements**: [API Reference (V1)](https://docs.mirage-ai.com/references/api/v1/) at revision: 19/12/2023
+* **📝 Implements**: [API Reference (V1)](https://docs.mirage-ai.com/references/api/v1/) at revision: 06/18/2025
 * **😘 Maintainer**: [@valeriansaliou](https://github.com/valeriansaliou)
 
 ## Usage
@@ -175,6 +175,62 @@ client.task.answer_question({
   "data": {
     "answer": "You can add the Crisp chatbox to your website by following this guide: https://help.crisp.chat/en/article/how-to-add-crisp-chatbox-to-your-website-dkrg1d/ :)",
     "sources": []
+  }
+}
+```
+
+#### ➡️ Answer Chat
+
+* **Method:** `client.task.answer_chat(data)`
+* **Reference:** [Answer Chat](https://docs.mirage-ai.com/references/api/v1/#answer-chat)
+
+* **Request:**
+
+```python
+client.task.answer_chat({
+  "context": {
+    "conversation": {
+      "messages": [
+        {
+          "from": "user",
+          "text": "Where is my order?"
+        }
+      ]
+    }
+  },
+  "tools": [{
+    "type": "function",
+    "function": {
+      "name": "get-order-details",
+      "description": "Retrieves a user order details.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "customer email"
+          },
+          "order_number": {
+            "type": "string",
+            "description": "an order number"
+          }
+        },
+        "required": ["email", "order_number"]
+      }
+    }
+  }],
+  "model": "medium"
+});
+```
+
+* **Response:**
+
+```json
+{
+  "reason": "processed",
+  "data": {
+    "answer": "Sure! What is your email and order number?",
+    "model": "medium"
   }
 }
 ```
