@@ -29,6 +29,9 @@ class TaskResource(object):
 
   def categorize_conversations(self, data):
     return self.parent.post("/task/categorize/conversations", data)
+  
+  def categorize_question(self, data):
+    return self.parent.post("/task/categorize/question", data)
 
   def rank_question(self, data):
     return self.parent.post("/task/rank/question", data)

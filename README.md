@@ -6,7 +6,7 @@ The Mirage API Python wrapper. Access AI inference services.
 
 Copyright 2023 Crisp IM SAS. See LICENSE for copying information.
 
-* **📝 Implements**: [API Reference (V1)](https://docs.mirage-ai.com/references/api/v1/) at revision: 06/18/2025
+* **📝 Implements**: [API Reference (V1)](https://docs.mirage-ai.com/references/api/v1/) at revision: 07/01/2025
 * **😘 Maintainer**: [@valeriansaliou](https://github.com/valeriansaliou)
 
 ## Usage
@@ -352,6 +352,31 @@ client.task.categorize_conversations({
     "categories": [
       "Chatbot Configuration Issue"
     ]
+  }
+}
+```
+
+#### ➡️ Categorize Question
+
+* **Method:** `client.task.categorize_question(data)`
+* **Reference:** [Categorize Question](https://docs.mirage-ai.com/references/api/v1/#categorize-question)
+
+* **Request:**
+
+```python
+client.task.categorize_question({
+  "question": "Hello. I have a question."
+});
+```
+
+* **Response:**
+
+```json
+{
+  "reason": "processed",
+
+  "data": {
+    "category": "Opener"
   }
 }
 ```

@@ -5,7 +5,7 @@ from setuptools import find_packages
 
 setup(
     name='mirage-api',
-    version='1.8.0',
+    version='1.9.0',
     author=u'Valerian Saliou',
     author_email='valerian@valeriansaliou.name',
     packages=find_packages(),
