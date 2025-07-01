@@ -376,7 +376,7 @@ client.task.categorize_question({
   "reason": "processed",
 
   "data": {
-    "category": "Opener"
+    "category": "opener"
   }
 }
 ```
